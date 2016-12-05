@@ -1,5 +1,5 @@
 #!/bin/bash
-#delete docker image run running container using name 
+#delete docker image using name 
 #$1=docker name need to be delete 
 idarray=($(docker ps | awk '{ print $1 }'))
 namearray=($(docker ps | awk '{ print $2 }'))
